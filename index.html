@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
+    <style>
+      #resume{color: orange;
+      font-weight: bolder;}
+      .heading{
+        color: cadetblue;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section -->
@@ -49,7 +57,7 @@
           />
         </svg>
         &nbsp; patiltejaswini100@gmail.com &nbsp; &nbsp; &nbsp;
-        <a href="assets/resume.pdf" download>
+        <a href="assets/resume.pdf" download id="resume">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -82,9 +90,9 @@
     <section>
       <!-- HOME Section -->
       <section id="home">
-        <h2>Professional Summary</h2>
+        <h2 class="heading">Professional Summary</h2>
         <ul>
-          <li>
+          <li style="color: cadetblue;">
             Having 1 year of experience in developing Single page Web
             Applications using angular 8, HTML5, CSS3, Bootstrap5, JavaScript,
             TypeScript
@@ -113,7 +121,7 @@
     <hr />
     <!-- Technology stack section -->
     <section id="techStack">
-      <h2>Technology stack</h2>
+      <h2 class="heading">Technology stack</h2>
       <table border="1">
         <thead>
           <tr>
@@ -150,7 +158,7 @@
 
     <!-- Project Section -->
     <section id="project">
-      <h2>Projects</h2>
+      <h2 class="heading">Projects</h2>
       <h2>
         <b><u>Project Details</u></b> 
      </h2>
