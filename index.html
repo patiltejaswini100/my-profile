@@ -7,17 +7,29 @@
     <style>
       #resume{color: orange;
       font-weight: bolder;}
-      .heading{
-        color: cadetblue;
+      .heading,.obj{
+        color: rgb(202, 66, 66);
         font-style: italic;
+        background-color: rgb(192, 164, 218);
       }
+      a#one,#two,#three,#four,#five,#six{color: darkgreen;text-decoration: none;}
+
+      #icon,#mobicon,#mail,#download{color: green;}
+      
+      .name,.mob,.email,.resume{color: brown;}
+
+      #head{background-color: rgb(190, 170, 209);}
+
+      #Angular{color: rgb(247, 124, 9);}
+
+      #object{text-transform: uppercase;}
     </style>
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <header id="head">
       <p>
-        <svg
+        <svg id="icon"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -29,8 +41,8 @@
             d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
           />
         </svg>
-        &nbsp;Tejaswini Patil &nbsp; &nbsp; &nbsp;
-        <svg
+        &nbsp;<span class="name">Tejaswini Patil</span> &nbsp; &nbsp; &nbsp;
+        <svg id="mobicon"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -43,8 +55,8 @@
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
           />
         </svg>
-        &nbsp; 9168 4268 92 &nbsp; &nbsp; &nbsp;
-        <svg
+        &nbsp; <span class="mob">9168 4268 92</span> &nbsp; &nbsp; &nbsp;
+        <svg id="mail"
           xmlns="http://www.w3.org/2000/svg"
           width="16"
           height="16"
@@ -56,9 +68,9 @@
             d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
           />
         </svg>
-        &nbsp; patiltejaswini100@gmail.com &nbsp; &nbsp; &nbsp;
+        &nbsp; <span class="email">patiltejaswini100@gmail.com</span> &nbsp; &nbsp; &nbsp;
         <a href="assets/resume.pdf" download id="resume">
-          <svg
+          <svg id="download"
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
@@ -70,21 +82,25 @@
               d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"
             />
           </svg>
-          RESUME
+          <span class="resume">RESUME</span>
         </a>
       </p>
     </header>
 
     <!-- Navigation Section -->
     <nav>
-      <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#techStack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#project">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="#education">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
-      <a href="personalDetails.html" target="_blank">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp;
+      <a href="#home" id="one">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="#techStack" id="two">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="#project" id="three">PROJECTS</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="#education" id="four">EDUCATION</a> &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="personalDetails.html" id="five" target="_blank">PERSONAL DETAILS</a> &nbsp; &nbsp; &nbsp;
       &nbsp;
-      <a href="others.html" target="_blank">OTHERS</a>
+      <a href="others.html" id="six" target="_blank">OTHERS</a>
     </nav>
+
+    <h2 class="obj">Career Objectives</h2>
+
+    <p id="object">To work in organization where I can learn and grow my skills and help organizational growth</p>
 
     <!-- Main Section -->
     <section>
@@ -94,10 +110,10 @@
         <ul>
           <li style="color: cadetblue;">
             Having 1 year of experience in developing Single page Web
-            Applications using angular 8, HTML5, CSS3, Bootstrap5, JavaScript,
+            Applications using <span id="Angular">Angular 8</span>, HTML5, CSS3, Bootstrap5, JavaScript,
             TypeScript
           </li>
-          <li>
+          <li style="color: rgb(106, 65, 180);background-color: rgb(133, 230, 199);">
             Experience on working with version control system - GIT and GitHub
           </li>
           <li>
