@@ -6,11 +6,18 @@
     <title>My Profile</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
+
+
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
-        margin-bottom: 20px;
+        margin-bottom: 20px;font-family: "Roboto", sans-serif;
       }
       #resume{
         color: orange;
@@ -18,7 +25,7 @@
       }
       .heading{
         color: cadetblue;
-        font-style: italic;
+        font-style: italic;text-shadow: 4px 4px 2px rgba(159,143,143,0.6);font-family: "Roboto", sans-serif
       }
       .header-info{
         margin-right: 40px;
@@ -27,14 +34,29 @@
       #resume-text{
         margin-left: 10px;
       }
-      #one,#two,#three,#four,#five,#six{margin-right: 70px;padding: 30px 20px;}
+      #one,#two,#three,#four,#five,#six{margin-right: 70px;padding: 30px 20px; font-family: "Roboto", sans-serif}
 
-      th{padding: 20px 20px;}
+      th{padding: 20px 20px;font-family: "Poppins", sans-serif}
 
-      td{padding:  10px 40px;}
+      td{padding:  10px 40px;font-family: "Poppins", sans-serif}
 
       li{padding: 10px 20px;}
-      
+
+      table,tr,th,td{border: 2px solid orange;border-collapse: collapse;}
+      #techStacktable{width: 50%;}
+
+      li{font-family: "Poppins", sans-serif;}
+
+      #edu{font-family: "Roboto", sans-serif;text-shadow: 4px 4px 2px rgba(159,143,143,0.6);color: cadetblue;}
+
+      #project{font-family: "Poppins", sans-serif}
+
+      .obj{text-shadow: 4px 4px 2px rgba(159,143,143,0.6);font-family: "Roboto", sans-serifs;color: cadetblue;}
+
+      #object{font-family: "Poppins", sans-serif}
+
+      #copy{font-family: "Poppins", sans-serif}
+
     </style>
     
   </head>
@@ -42,11 +64,11 @@
     <!-- Header Section -->
     <header>
       <i class="fa fa-user fa-lg" aria-hidden="true"></i>
-      <span class="header-info">Gajanan Kharat </span> 
+      <span class="header-info">Tejaswini Patil </span> 
       <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>  
-      <span class="header-info">8600 4086 19  </span>  
+      <span class="header-info">9168 4268 92  </span>  
       <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
-      <span class="header-info">gajanan490@gmail.com </span> 
+      <span class="header-info">patiltejaswini@gmail.com </span> 
       <a href="assets/resume.pdf" download id="resume">  <i class="fa fa-download fa-lg" aria-hidden="true"></i> <span id="resume-text">RESUME</span>  </a>        
 </header>
     <!-- Navigation Section -->
@@ -58,10 +80,12 @@
       <a href="personalDetails.html" id="five" target="_blank">PERSONAL DETAILS</a>
       <a href="others.html" id="six" target="_blank">OTHERS</a>
     </nav>
+    <hr>
 
     <h2 class="obj">Career Objectives</h2>
 
     <p id="object">To work in organization where I can learn and grow my skills and help organizational growth</p>
+<hr>
 
     <!-- Main Section -->
     <section>
@@ -93,7 +117,7 @@
     <!-- Technology stack section -->
     <section id="techStack">
       <h2 class="heading">Technology stack</h2>
-      <table border="1" style="margin-bottom: 30px;margin-left: 30px;">
+      <table id="techStacktable" style="margin-bottom: 30px;margin-left: 30px;">
         <thead>
           <tr>
             <th>Sr. No</th>
@@ -154,7 +178,7 @@
 
     <!-- Education Section -->
     <section id="education">
-      <h2>Education Details</h2>
+      <h2 id="edu">Education Details</h2>
       <table border="1" style="margin-bottom: 20px;">
         <thead>
           <tr>
@@ -206,7 +230,7 @@
         <i class="fa fa-facebook-square" aria-hidden="true"></i>
       </a>
     </footer>
-    <section>
+    <section id="copy">
       <!-- Copy write section -->
       Copyright &copy;2024 Tejaswini Patil, Inc. All rights reserved.
     </section>
