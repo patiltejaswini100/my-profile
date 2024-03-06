@@ -11,7 +11,7 @@
 header{
     padding: 8px;
     background-color: rgb(8, 8, 8);
-    margin: 2px;font-family: "Roboto", sans-serif;color: white;position: fixed;
+    margin: 2px;font-family: "Roboto", sans-serif;color: white;position: fixed;width: 100%;
   }
   #resume{
     color: orange;
@@ -33,7 +33,7 @@ header{
 /* Navigation Section */
 #navSection{
     
-    text-align:center;background-color: aqua;position: fixed;margin: 50px 1px;
+    text-align:center;background-color: aqua;position: fixed;margin: 50px 1px;width: 100%;
 }
 #navSection li{
     display: inline;
