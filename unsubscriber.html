@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unsubscriber</title>
+    <style>
+      #container {
+        width: 400px;
+        margin: 18px auto;
+        height: 500px;
+        border: 1px solid rgb(240, 235, 235);
+        box-shadow: 4px 2px 5px 0px rgba(153, 138, 138, 0.75);
+        -webkit-box-shadow: 4px 2px 5px 0px rgba(153, 138, 138, 0.75);
+        -moz-box-shadow: 4px 2px 5px 0px rgba(153, 138, 138, 0.75);
+        border-radius: 10px;
+      }
+
+      hr {
+        width: 310px;
+        border-color: rgb(235, 231, 231);
+      }
+
+      h1 {
+        font-weight: bold;
+        font-size: large;
+        padding-left: 38px;
+      }
+      textarea {
+        font-size: large;
+        padding: 10px;
+        background-color: rgb(19, 140, 180);
+        margin: 0px 40px;
+        border-radius: 8px;
+        color: rgb(187, 187, 69);
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 0.5px;
+      }
+      p {
+        font-size: large;
+        font-weight: bold;
+        padding-left: 40px;
+      }
+      span {
+        color: red;
+      }
+      #email-text {
+        width: 305px;
+        border-radius: 5px;
+        padding: 5px;
+        background-color: rgb(224, 220, 214);
+        border-color: rgb(235, 231, 231);
+      }
+      #Unsubscribe-text {
+        padding-bottom: 15px;
+        padding-top: 5px;
+        width: 310px;
+        border-radius: 5px;
+        background-color: rgb(224, 220, 214);
+        border-color: rgb(235, 231, 231);
+      }
+      #btn {
+        margin-top: 10px;
+        left: 260px;
+        bottom: 10px;
+        position: relative;
+        padding: 0px 10px;
+        width: 98px;
+        font-weight: bold;
+        color: rgb(70, 68, 68);
+        background-color: rgb(224, 220, 214);
+        border-color: rgb(235, 231, 231);
+        
+      }
+    </style>
+  </head>
+  <body>
+    <section id="container">
+      <h1>Subscriber</h1>
+
+      <hr />
+      <form>
+        <textarea name="" id="" cols="31" rows="10"></textarea>
+
+        <p>
+          Email <span>*</span><br />
+          <input type="email" name="" id="email-text" />
+        </p>
+
+        <p>
+          Unsubscribe reason <br />
+          <input
+            id="Unsubscribe-text"
+            type="text"
+            placeholder="Unsubscribe reason"
+          />
+        </p>
+        <hr />
+
+        <input id="btn" type="button" value="Unsubscribe" />
+      </form>
+    </section>
+  </body>
+</html>
